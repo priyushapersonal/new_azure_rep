@@ -7,8 +7,7 @@
 		},
 		"parameters": {
 			"filename": {
-				"type": "String",
-				"defaultValue": "Students"
+				"type": "String"
 			}
 		},
 		"annotations": [],
