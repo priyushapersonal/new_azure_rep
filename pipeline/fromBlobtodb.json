@@ -55,7 +55,10 @@
 						"referenceName": "Students_table",
 						"type": "DatasetReference",
 						"parameters": {
-							"tablename": "dbo.Students"
+							"tablename": {
+								"value": "@pipeline().parameters.tablename",
+								"type": "Expression"
+							}
 						}
 					}
 				]
@@ -63,6 +66,9 @@
 		],
 		"parameters": {
 			"filename": {
+				"type": "String"
+			},
+			"tablename": {
 				"type": "String"
 			}
 		},
