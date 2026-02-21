@@ -41,17 +41,31 @@
 				"inputs": [
 					{
 						"referenceName": "student_excel",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"filename": {
+								"value": "@pipeline().parameters.filename",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
 					{
 						"referenceName": "Students_table",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"tablename": "dbo.Students"
+						}
 					}
 				]
 			}
 		],
+		"parameters": {
+			"filename": {
+				"type": "String"
+			}
+		},
 		"annotations": []
 	}
 }
