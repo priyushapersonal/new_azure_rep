@@ -1,0 +1,9 @@
+{
+	"name": "azr-data-fctry",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7b974011-dbbc-4ebf-9b5e-35471b91afab",
+		"tenantId": "a6f91476-4bab-46f8-8728-d0cf3eb70e11"
+	}
+}
